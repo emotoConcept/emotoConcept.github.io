@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+
+<!-- DEFAULT META TAGS -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Emoto</title>
+<!-- DEFAULT META TAGS -->
+
+<!-- FONTS -->
+<link href="https://fonts.googleapis.com/css?family=Work+Sans:400,600&display=swap" rel="stylesheet">
+<!-- <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Maven+Pro:400,700,900" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet" type="text/css"> -->
+<!-- FONTS -->
+
+<!-- CSS -->
+<link rel="stylesheet" id="default-style-css"  href="files/css/style.css" type="text/css" media="all" />
+<link rel="stylesheet" id="wolf-css" href="files/css/wolf.css" type="text/css" media="all" />
+<link rel="stylesheet" id="owlcarousel-css" href="files/css/owl.carousel.css" type="text/css" media="all" />
+<link rel="stylesheet" id="fontawesome-style-css" href="files/css/font-awesome.min.css" type="text/css" media="all" />
+<link rel="stylesheet" id="ionic-icons-style-css" href="files/css/ionicons.css" type="text/css" media="all" />
+<link rel="stylesheet" id="mqueries-style-css"  href="files/css/mqueries.css" type="text/css" media="all" />
+<!-- CSS -->
+
+<!-- FAVICON -->
+<link rel="shortcut icon" href="files/uploads/favicon.png"/>
+<!-- FAVICON -->
+
+</head>
+
+<body>
+
+<!-- PAGELOADER -->
+<div id="page-loader">
+	<div class="page-loader-inner">
+		<div class="loader"><strong>Loading</strong></div>
+	</div>
+</div>
+<!-- PAGELOADER -->
+
+<!-- PAGE CONTENT -->
+<div id="page-content">
+
+	<!-- HEADER -->
+<!-- 	<header id="header">        
+		<div class="header-inner clearfix">
+			
+            <div id="logo" class="left-float show-light-logo">
+                <a id="dark-logo" class="logotype" href="index.html"><img src="files/uploads/logo-avoc-dark.png" srcset="files/uploads/logo-avoc-dark.png 1x, files/uploads/logo-avoc-dark@2x.png 2x" alt="Logo"></a>
+                <a id="light-logo" class="logotype" href="index.html"><img src="files/uploads/logo-avoc-light.png" srcset="files/uploads/logo-avoc-light.png 1x, files/uploads/logo-avoc-light@2x.png 2x" alt="Logo"></a>
+            </div>
+            
+            <div id="menu" class="right-float clearfix menu-light">
+                <a href="#" class="open-nav"><span class="hamburger"></span></a>
+                
+            	<nav id="main-nav">
+					<ul>
+						<li class="current-menu-item"><a href="index.html">Home</a>
+                        	<ul class="submenu">
+                            	<li>general overview?</li>
+                            </ul>
+                        </li>
+                        <li><a href="about.html">About</a>
+                        	<ul class="submenu">
+                            	<li>Contact us</li>
+                            </ul>
+                        </li>
+						<li><a href="https://medium.com/@marisalu/a-future-of-phones-ai-assistants-as-emotive-sidekicks-ongoing-507907edb587">Process</a>
+                        	<ul class="submenu">
+                            	<li>Blog documenting the process of making Emoto</li>
+                            </ul>
+                        </li>
+                    </ul>
+            	</nav>
+            </div>
+                    
+		</div>
+	</header> -->
+	<!-- HEADER -->    
+	
+	<!-- <div class="test" style="position: fixed;top:20px;left:20px; height: 60px; overflow:hidden; width: 100%; color: red;"></div> -->
+    
+    <!-- HERO  -->
+<!-- 	<section id="hero" class="hero-full text-light videobg-section"
+					   	data-videofile="files/uploads/coffee" 
+					   	data-videowidth="1280"
+					   	data-videoheight="720"
+					   	data-videoposter="files/uploads/1680x1100-light.jpg"
+					   	data-videooverlaycolor="#ea4452"
+					   	data-videooverlayopacity="0.7"
+						data-sound="false"> -->
+<!--     <section id="hero" class="hero-full parallax-section text-light" data-parallax-image="files/uploads/glam.jpg">
+    	<div class="page-title" style = "background-image: url('glam.jpg');">
+        	<h1 style="mix-blend-mode: color-burn; color: #A9A9A9;"><strong>Emoto</strong></h1>
+                    <div class="wrapper-small align-center">
+            <h5>From phone to AI sidekick</h5>
+        </div>
+        </div>
+        <a id="scroll-down" href="#"></a>
+    </section> -->
+    <!-- HERO -->
+<style>
+
+.image-container {
+/*  background-image: url("files/uploads/glam.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;*/
+
+  position: relative;
+  height:1000px;
+}
+.sequencer {
+    min-height: 100%;
+    height:101%;
+    width: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.burnOverlay {
+  margin: 0 auto;
+  padding: 10px;
+  width: 100%;
+  font-size: 3vw;
+  text-align: center;
+  vertical-align: top;
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  mix-blend-mode: color-burn;
+}
+div#images{
+    height: 3000px;
+    z-index: 0;
+}
+/*#scrollCoverImage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 0;
+}*/
+/* for the video scroller#v0 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+#set-height {
+  display: block;
+}*/
+</style>
+    <div id="images" style="position:fixed;">
+        <img class="sequencer" src="files/uploads/coverSequence/0.jpg">
+    </div> 
+    <div class="image-container text-burn">
+        <div class="burnOverlay" id="landingTitle" style="position:fixed;">
+            <h1><b>emoto</b></h1>
+            <h4>Speculative work reimagining how we<br>relate to mobile and smart home devices</h4>
+        </div>
+        <div class="burnOverlay" id="secondTitle" style="position:fixed;opacity:0; vertical-align: top">
+            <h2 style="text-align:left;padding-left:16vw"><b>From phone,</b></h2>
+        </div>
+<!--         <a id="scroll-down" href="#"></a> -->
+    </div>
+    <div id = "trigger"></div>
+    <section id="page-body">
+<!--     <section id="hero" class="hero-full parallax-section text-light" data-parallax-image="files/uploads/glam.jpg"data-parallax-image="files/uploads/glam.jpg">
+        <div class="page-title">
+            <h1 style="mix-blend-mode: color-burn; ;"><strong>Emoto</strong></h1>
+                    <div class="wrapper-small align-center">
+            <h5>From phone to AI sidekick</h5>
+        </div>
+        </div>
+        <a id="scroll-down" href="#"></a>
+    </section>   -->     
+	<!-- PAGEBODY -->
+<!-- 	<section id="page-body"> -->
+        <div class="fullVideoWrapper" id="imgSequenceEnd" style="visibility:hidden;">
+<!--             <img src="files/uploads/videoCover.jpg" width="100%"> -->
+            <iframe src="https://player.vimeo.com/video/274786021?color=99e0d1&title=0&byline=0&portrait=0" width="1000" height="562" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<!--        <div class="inline-video" data-type="vimeo" data-videoid="274786021" data-button="Vimeo Video">
+                <img src="files/uploads/videoThumbnail.jpg" alt="SEO NAME">
+            </div> -->
+        </div>
+        <div class="spacer spacer-big"></div>
+                <!-- <div class="spacer spacer-medium"></div> -->
+        <div class="wrapper-small align-center four-fifth">
+            <h3 style="color:#9dc5cc"><b>Emoto is a robotic platform that gives body and expression to a concept AI operating system</b></h3> 
+<!--             
+            <h5 class="alttitle">Our concept and working prototype are contributions to the larger conversation regarding  human-to-AI etiquette, the role of home assistants, and people's relationships (addictions) to mobile devices</h5>-->
+
+        </div>
+        <div class="spacer spacer-small"></div>
+        <div class="spacer spacer-mini"></div>
+        <div class="wrapper-small align-center four-fifth">
+             <h5>We made it to better explore some of the following concepts + interactions - </h5>
+        </div>
+<!--         <div class="spacer spacer-mini"></div>    -->        
+        <div class="horizontal-section">
+            <div class="horizontal-inner wrapper">
+               <!--  <li class="has-animation">
+                        <div class="inline-video" data-type="vimeo" data-videoid="274786021" data-button="Vimeo Video">
+                            <img src="files/uploads/orange.gif" alt="SEO NAME" width="100%">
+                        </div>
+                    </li> -->
+                <ul class="gallery gallery-col3  spaced">
+                    <li class="has-animation">
+                        <b>Placemaking for Phones</b><br>
+                        When you get home, everything else has its place (and time): the coat on the hanger, shoes on the rack, and keys by the door. But your phone? In your hand and on your mind, in bed, while you're working, and in the bathroom? We refer to placemaking as the process of finding or making a place of belonging for an idea, device, or service in someone's life. That includes consideration of people's behaviors and habits, not just physical where and how. Being intentional about placemaking, is being intentional about how you frame interaction with said idea/device/or service.
+                    </li>
+                    <!-- purposeful placemaking for more intentional interaction -->
+                    <li class="has-animation">
+                        <!-- <div class="inline-video" data-type="vimeo" data-videoid="274786021">
+                           <img src="files/uploads/royal.gif" alt="SEO NAME" width="100%">
+                        </div> -->
+                        <div style="background-image: url('files/uploads/phoneDownThumbnail.jpg'); background-position: center;background-size: cover;">
+                        <video class="video-hover" loop muted="muted" data-play="hover"><source src="files/uploads/phoneDown.mp4" type="video/mp4"></video></div>
+                        You might not have somewhere specific place for your phone, but you'll always need to charge! The robot is a wireless charging base.
+                    </li>
+                    <li class="has-animation">
+                        <div style="background-image: url('files/uploads/openingThumbnail.jpg'); background-position: center;background-size: cover;">
+                        <video class="video-hover" loop muted="muted" data-play="hover"><source src="files/uploads/opening.mp4" type="video/mp4"></video></div>The touchscreen GUI and functionalities of the phone become accessible far-field through the AI character</li>
+                </ul>
+
+                <div class="spacer spacer-small"></div>
+                <b>Extended Sensor systems</b>
+                <div class="spacer spacer-mini"></div>
+                <ul class="gallery gallery-col3  spaced">
+                    <li class="has-animation">
+                       <!--  <img src="files/uploads/green.gif" width="100%"> -->
+                        <div style="background-image: url('files/uploads/ballRollThumbnail.jpg'); background-position: center;background-size: cover;">
+                        <video class="video-hover" loop muted="muted" data-play="hover"><source src="files/uploads/ballRoll.mp4" type="video/mp4"></video></div>
+                        Computer vision for contextual awareness. This particular example is of object tracking.
+                    </li>
+                    <li class="has-animation">
+                        <div style="background-image: url('files/uploads/faceRecoThumbnail.jpg'); background-position: center;background-size: cover;">
+                        <video class="video-hover" loop muted="muted" data-play="hover"><source src="files/uploads/faceReco.mp4" type="video/mp4"></video>
+                        </div>
+                        Face Recognition allows for tailored behavior and varied levels of access as it becomes shared device for the space
+                    </li>
+                    <li class="has-animation">
+                        <div style="background-image: url('files/uploads/audioWakeThumbnail.jpg'); background-position: center;background-size: cover;">
+                        <video class="video-hover" loop muted="muted" data-play="hover"><source src="files/uploads/audioWake.mp4" type="video/mp4"></video>
+                        </div>
+                    The phone takes on the role of home-assistant as it responds to speech and sound input</li>
+                </ul>
+                <div class="spacer spacer-small"></div>
+                <b>Augmenting Phone Capabilities</b>
+                <div class="spacer spacer-mini"></div>
+                <ul class="gallery gallery-col3  spaced">
+                    <li class="has-animation">
+                        <div style="background-image: url(files/uploads/green.gif)">
+                        <video class="video-hover" loop muted="muted" data-play="hover"><source src="files/uploads/faceReco.mp4" type="video/mp4"></video>
+                        </div>
+                    Dismissing a notification because the robot knows you saw it, or learning some tact about whe it's appropriate. </li>
+                    <li class="has-animation"><div style="background-image:url('files/uploads/timekeeperThumbnail.jpg');background-size: cover;">
+                        <video class="video-hover" loop muted="muted" data-play="hover"><source src="files/uploads/timekeeper.mp4" type="video/mp4"></video>
+                        </div>When not being actively engaged, the robot defaults to being your timekeeper</li>
+
+                    <li class="has-animation"><div style="background-color:#006f80">
+                        <video class="video-hover" loop muted="muted" data-play="hover"><source src="files/uploads/ballRoll.mp4" type="video/mp4"></video>
+                        </div>Motors and smart cv enabling a level of telepresence. Example shown is a facetime</li>
+                </ul>
+                <!-- Potential for nonverbal communication  and cues between user and device...like  -->
+                <div class="spacer spacer-small"></div>
+                <b>Device as character</b>
+                <div class="spacer spacer-mini"></div>
+                <ul class="gallery gallery-col3  spaced">
+                    <li class="has-animation"><div style="background-image:url('files/uploads/timekeeperThumbnail.jpg');background-size: cover;">
+                        <video class="video-hover" loop muted="muted" data-play="hover"><source src="files/uploads/faceReco.mp4" type="video/mp4"></video>
+                        </div>Nonverbal communication with gestures, eye gaze, and body language. It attempts to understand and see what has caught your attention when you actively engage.</li>
+                    <li class="has-animation"><div style="background-color:#006250">
+                        <video class="video-hover" loop muted="muted" data-play="hover"><source src="files/uploads/teachingFromContext.mp4" type="video/mp4"></video>
+                        </div>Learning some contextual awareness (not shown is the conversationally generated 'shortcut' of the concept OS)</li>
+
+                    <li class="has-animation">
+                        <div style="background-color:#00398F">
+                        <video class="video-hover" loop muted="muted" data-play="hover"><source src="files/uploads/ballRoll.mp4" type="video/mp4"></video>
+                        </div>Tailored behavior to each person as they relate to the phone. There are varied levels of access as it becomes a shared device for the space</li>
+                </ul>
+            </div>
+
+        </div>
+
+<!--    <div class="horizontal-section" style="background: #e3e7e8;text-align:center">
+            <video class="bg" src="files/uploads/stopmotion.mp4" autoplay muted playsinline loop></video>
+            <div class="spacer spacer-medium"></div>
+            <h3><b>Open sourced plans.<br>Build one yourself!</b></h3>
+            <div class="spacer spacer-mini"></div>
+            <div class="align-center">
+                <p><a href="https://medium.com/@marisalu/a-future-of-phones-ai-assistants-as-emotive-sidekicks-ongoing-507907edb587" target="_blank" class="sr-button">Instructions</a></p>
+            </div> 
+            <div class="spacer spacer-small"></div>
+       	</div>  --> 
+
+        <div class="hero-full" style="background: #deddea;text-align:center" id="hero">
+            <div class="spacer spacer-small"></div>
+<!--             <video class="bg" style="width:100%;"src="files/uploads/stopmotion.mp4" autoplay muted playsinline loop></video> -->
+            <h3 style="position:relative; z-index:10;"><b>Open sourced plans.<br>Build one yourself!</b></h3>
+            <div class="spacer spacer-small"></div>
+            <div class="align-center" style="position:relative; z-index:10;">
+                <p><a href="https://medium.com/@marisalu/a-future-of-phones-ai-assistants-as-emotive-sidekicks-ongoing-507907edb587" target="_blank" class="sr-button">Instructions</a></p>
+            </div> 
+            <div class="spacer spacer-big"></div>
+            <div class="spacer spacer-big"></div>
+
+        </div>
+
+        <div class="horizontal-section parallax-section text-light" data-parallax-image="files/uploads/1680by1100.jpg">
+        	<div class="horizontal-inner wrapper">
+            	<h3 class="align-center"><strong>The bigger picture</strong></h3>
+                <p class="align-center">Our concept hopes to contribute to larger conversations surrounding—</p>
+                
+                <div class="column-section clearfix">
+                    <div class="column one-third align-center">
+                        <i class="ion ion-ios-people ion-4x colored"></i>
+                        <h5>Human & AI Etiquette</h5>
+                        <p>"the tone of voice that we use in a growing percentage of our daily interactions matters—not for Alexa, not for Amazon, not for Apple, but for us" - Rachel Withers</p>
+                    </div>
+                    <div class="column one-third align-center">
+                        <i class="ion ion-ios-home ion-4x colored"></i>
+                        <h5>Home Assistants</h5>
+                        <p>“it’s as if missing housewives are being replaced with more servile smart-home wives, reinforcing cultural connections between ‘women’ + ‘subservience’ to boot.”</p>
+                    </div>
+                    <div class="column one-third last-col align-center">
+                        <i class="ion ion-iphone ion-4x colored"></i>
+                        <h5>Smartphone addiction</h5>
+                        <p>“Let’s work towards escaping this world of screen-zombies” — Golden Krishna, author of 'No Interface is the Best Interface' and design lead for Google's android visioning</p>
+                    </div>
+                </div>
+        	</div>
+       	</div> <!-- END .horizontal-section -->        
+ 	</section>
+	<!-- PAGEBODY -->
+    <div class="horizontal-section" style= "background-color: #faf3f0; color:#b8897b">
+        <div class="horizontal-inner wrapper">
+                <h3 class="align-center" style="color:#b8897b"><b>Acknowledgements</b></h3>
+                <p class="align-center">A warm and special thanks to the contributors, mentors, peers, and role-models<br>that have shared headspace, encouragement, and/or inspiration!</p>
+                
+                <div class="column-section clearfix" style="z-index:100;">
+                    <div class="column one-third align-left">
+                        <b>Contributors</b>
+                        <ul>
+                            <li><a href= "http://www.connerharden.com/" target="blank">Conner Harden</a> for industrial design and lovely form-giving consultation</li>
+                            <li><a href= "http://mikerito.com/" target="blank">Mike Rito</a> our fantastic surface modeling ID expert</li>
+                            <li><a href="https://jaimeyshapey.com/" target="blank">Jamie Shapey</a> for logotypes and sharply effective eagle eye</li>
+                            <li><a href="https://soonhokwon.com/">Soonho Kwon</a> for your time, skill, and eye for photo composition</li>
+                        </ul>
+                    </div>
+                    <div class="column one-third align-left">
+                        <b>Mentors</b>
+                        <ul>
+                            <li><a href="https://danlockton.com/" target="blank">Professor Dan Lockton</a> and your unit on 'Where are the Humans in Ai'</li>
+                            <li><a href="http://www.isaacblankensmith.com/" target="blank">Isaac Blankensmith</a> from Google's Creative Labs for your advice, and encouragement</li>
+                            <li><a href="https://design.cmu.edu/people/faculty/stephen-stadelmeier" target="blank">Professor Stephen Stadelmeier</a> for sage questions and insight</li>
+                            <li><a href="https://design.cmu.edu/user/1315" target="blank">Josiah Stadelmeier</a> for invaluable, generous advice in the 'shop</li>
+                        </ul>
+                    </div>
+                    <div class="column one-third last-col align-left">
+                        <b>Peers</b>
+                        <ul>
+                            <li><a href="https://cameron-burgess.com/" target="blank">Cameron Burgess</a> for his sharply inquisitive headspace (and literal room space)</li>
+                            <li><a href="https://jasonyuan.design/" target="blank">Jason Yuan</a> for art direction feedback, and exuberant energy</li>
+                            <li><a href="http://www.aman.work/" target="blank">Aman Tiwari</a> for challenging and questioning our assumptions.</li>
+                            <li><a href="http://www.calvinlien.com/" target="blank">Calvin Lien</a> for ID expertise and incredible rendering.
+                        </ul>
+                    </div>
+                </div>
+                <div class="column-section clearfix" style="z-index:100;">
+                    <div class="column one-third align-left">
+                        <b>Citations</b><br>
+                        The full list of relevant publications, papers, and research is in <a href="http://imaginari.es/publications/p451-bose.pdf" target="blank"><b>our paper</b></a>.
+
+                    </div>
+                    <div class="column one-third align-left">
+                        <b>A Special Thanks to</b><br>
+                        <a href="https://www.creativelab5.com/" target="blank">Google's Creative Lab</a> for their generous support and research grant to <a href ="https://www.cmu.edu/">CMU</a> (and Sheila Larkin for making it happen)!
+                    </div>
+                    <div class="column one-third last-col align-left">
+                        <b>Inspirations</b></br>
+                        <a href="http://hennyadmoni.com/" target="blank">Henny Admoni</a>, <a href="https://www.ted.com/talks/cynthia_breazeal_the_rise_of_personal_robots/transcript?language=en" target="blank">Cynthia Breazeal</a>, <a href="https://www.michalluria.com/" target="blank">Michal Luria</a>, <a href="https://www.behance.net/ScottSchenone" target="blank">Scott Schenone</a>,<a href="https://www.linkedin.com/in/kaelinggurr" target="blank"> Kaeling Gurr</a>
+                        
+                    </div>
+                </div>
+            </div>
+    </div>
+    
+    <!-- FOOTER -->  
+    <footer>
+        <div class="footer-inner align-center wrapper">
+            <div class="widget">
+                <ul class="socialmedia-widget">
+                    Made by these three —
+                    <li class="fa fa-male"><a href="http://lucasochoa.com/" target="_blank"> Lucas Ochoa</a></li>
+                    <li class="fa fa-female"><a href="http://marisa.lu" target="_blank"> Marisa Lu</a></li>
+                    <li class="fa fa-male"><a href="https://gautam-bose.com/" target="_blank"> Gautam Bose</a></li>
+                    — from CMU &copy; 2017
+                </ul>
+		<p><a href="https://docs.google.com/forms/d/e/1FAIpQLSddfeybt2lO8ibUWt43b5D7RGllgTwuLFBH7VJcMghOokZhsg/viewform?usp=sf_link" target="_blank" class="sr-button">Follow Along</a></p>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER -->
+    
+</div> <!-- END #page-content -->
+<!-- SCRIPTS -->
+<script src="files/js/jquery-2.1.4.min.js"></script>
+<!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script> -->
+<script type="text/javascript" src="files/js/jquery.pace.js"></script>
+<script type="text/javascript" src="files/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="files/js/jquery.easing.compatibility.js"></script>
+<script type="text/javascript" src="files/js/jquery.visible.min.js"></script>
+<script type="text/javascript" src="files/js/tweenMax.js"></script>
+<!-- <script type="text/javascript" src="files/js/jquery.bgvideo.min.js"></script>
+<script type="text/javascript" src="files/js/jquery.backgroundparallax.min.js"></script>
+<script type="text/javascript" src="files/js/jquery.wolf.min.js"></script> -->
+<script type="text/javascript" src="files/js/script.js"></script>
+<script type="text/javascript" src="files/js/jquery-sequencer.min.js"></script>
+<script type="text/javascript" src="files/js/jquery.hoverplay.min.js"></script>
+
+
+<!-- SCRIPTS -->
+<script>
+
+    $("div#images").sequencer({
+
+        // the amount of images
+        count: 214,
+        // path to your images
+        path: "files/uploads/coverSequence",
+        // extension of your images
+        ext: "jpg"
+    });
+
+
+    var distanceToVideo;
+    jQuery(window).load(function() { 
+        distanceToVideo = $('#imgSequenceEnd').offset().top;
+    });
+    jQuery(window).scroll(function() { 
+        var scrollPos = jQuery( window ).scrollTop();
+        var totalHeight = jQuery( document ).height();
+        var distanceBetween = distanceToVideo - scrollPos;
+        
+
+        if(distanceBetween < 50){
+            $('.burnOverlay').css('visibility','visible');
+            // $('#images').css({'opacity' : distanceBetween/50});
+            $('.fullVideoWrapper').css('visibility','visible');
+            $('.fullVideoWrapper').css({'opacity' : (50-distanceBetween)/50});
+            if(distanceBetween < 1){
+                $('.fullVideoWrapper').css({'opacity' : 1,'position': 'sticky', 'top': '0px'});
+                $('#images').css('visibility','hidden');
+                $('#secondTitle').css({'opacity' : 0});
+            }
+        }else{
+            $('#images').css('visibility','visible');
+            $('.fullVideoWrapper').css('visibility','hidden');
+            if(scrollPos<400){
+                $('#landingTitle').css({'opacity' : 1-(scrollPos/300)});
+                $('#secondTitle').css({'opacity' : (scrollPos-300)/100});
+                // $('.burnOverlay').css({'opacity' : 1-(scrollPos/300)});
+            // }else if(scrollPos < 420){
+            }else if(distanceBetween <300){
+                $('#secondTitle').html('<h2 style="text-align:left;padding-left:16vw;"><b>From phone,<br>&nbsp;&nbsp;&nbsp;&nbsp;to AI sidekick.</b></h2>');
+            }
+        }
+    });
+
+
+</script>
+</body>
+</html>
