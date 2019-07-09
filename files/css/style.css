@@ -1756,6 +1756,8 @@ a.sr-button4:hover { background: #ffffff; }
 ------------------------------------------------*/	
 .bg{
 	min-width:100%;
+	min-height:90%;
+	align-content: center;
 	left:50%;
 	transform:translateX(-50%);
 	position:absolute;
@@ -1795,8 +1797,8 @@ div.fullVideoWrapper iframe.code {
 	opacity: 0.7;
 	content: "\f488";
 	font-family: "Ionicons";
-	color: #ffffff;
-	font-size: 90px;
+	color: #000000;
+	font-size: 100px;
 	width: 65px;
 	height: 70px; line-height: 70px;
 	text-align: center;
@@ -1816,10 +1818,10 @@ div.fullVideoWrapper iframe.code {
 /*	font-family: 'Montserrat';*/
 	font-family: 'Work Sans';
 	font-weight: 400;
-	font-size: 12px;
+	font-size: 18px;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
-	color: #ffffff;
+	color: #000000;
 	position: absolute;
 	top: 50%; margin-top: 45px;
 	left: 0;
@@ -1840,7 +1842,7 @@ div.fullVideoWrapper iframe.code {
 .inline-video .inline-iframe-container .close-inline-video {
 	content: "\f488";
 	font-family: "Ionicons";
-	color: #ffffff;
+	color: #000000;
 	width: 70px;
 	height: 70px; line-height: 70px;
 	text-align: center;
