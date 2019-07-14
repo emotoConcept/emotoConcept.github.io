@@ -2017,10 +2017,11 @@ div.fullVideoWrapper iframe.code {
 	mix-blend-mode: normal;
 }
 	
-.video-hover:hover {
+.video-hover:hover, .video-hover:active {
 	filter:opacity(100%);
 /*	mix-blend-mode: normal;*/
 }
+
 
 
 /*	img hover effect
