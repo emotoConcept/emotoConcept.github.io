@@ -125,6 +125,8 @@ header.nav-is-open.header-transparent #menu.menu-light .open-nav .hamburger:afte
 .wrapper { width: calc(100% - 80px); }
 .wrapper-small { width: calc(100% - 80px); }
 
+.sequencer { left:40%;}
+
 h1 { font-size: 15vw; line-height: 70px; }
 h2 { font-size: 38px; line-height: 50px; }
 h3 { font-size: 27px; line-height: 36px; }
@@ -194,12 +196,14 @@ nav#main-nav { top: 90px !important; height: calc(100% - 110px); }
 
 
 @media only screen and (max-width: 500px) {
+
 	
 #page-content { min-width: calc(100% - 40px); }	
 .wrapper { width: calc(100% - 40px); }
 .wrapper-small { width: calc(100% - 40px); }
 .wrapper-mini { width: calc(100% - 40px); }
 
+.sequencer { left:3%;}
 
 h1 { font-size: 19vw; line-height: 20vw; }
 h2 { font-size: 32px; line-height: 41px; }
