@@ -1675,7 +1675,7 @@ a.sr-button {
 	color: #ffffff;
 	padding: 15px 50px;
 	background: #0d0d0d;
-	}
+}
 a.sr-button:hover { background: #90D4C5; }
 
 a.mini-button { font-size: 10px; padding: 10px 40px; }
@@ -1692,8 +1692,8 @@ a.sr-button2:hover { background: #0d0d0d; }
 a.sr-button3 { background: #ffffff; }
 a.sr-button3:hover { background: #90D4C5; }
 
-a.sr-button4 { background: #90D4C5; }
-a.sr-button4:hover { background: #ffffff; }
+a.sr-button4 { background: #90D4C5; color: #0d0d0d;}
+a.sr-button4:hover { background: #ffffff; color: #000000;}
 
 
 .sr-button-text {
