@@ -269,9 +269,9 @@
             <div class="spacer spacer-small"></div>
        	</div>  --> 
 
-        <div class="hero-full" style="background: #deddea;text-align:center" id="hero">
+        <div style="background: #deddea;text-align:center" id="hero" class="hero-full">
             <div class="spacer spacer-small"></div>
-            <video class="bg" src="files/uploads/stopmotion.mp4" loop muted="muted" data-play="hover"></video>
+            <video class="bg" src="files/uploads/stopmotion.mp4" poster="uploads/files/stopmotion.jpg" loop muted="muted" autoplay></video>
             <h3 style="position:relative; z-index:10;"><b>Open sourced plans.<br>Build one yourself!</b></h3>
             <div class="spacer spacer-small"></div>
             <div class="align-center" style="position:relative; z-index:10;">
@@ -383,18 +383,17 @@
 </div> <!-- END #page-content -->
 <!-- SCRIPTS -->
 <script src="files/js/jquery-2.1.4.min.js"></script>
-<!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script> -->
 <script type="text/javascript" src="files/js/jquery.pace.js"></script>
 <script type="text/javascript" src="files/js/jquery.easing.1.3.js"></script>
 <script type="text/javascript" src="files/js/jquery.easing.compatibility.js"></script>
 <script type="text/javascript" src="files/js/jquery.visible.min.js"></script>
 <script type="text/javascript" src="files/js/tweenMax.js"></script>
-<!-- <script type="text/javascript" src="files/js/jquery.bgvideo.min.js"></script>
-<script type="text/javascript" src="files/js/jquery.backgroundparallax.min.js"></script>
+<!-- <script type="text/javascript" src="files/js/jquery.bgvideo.min.js"></script> -->
+<!-- <script type="text/javascript" src="files/js/jquery.backgroundparallax.min.js"></script>
 <script type="text/javascript" src="files/js/jquery.wolf.min.js"></script> -->
 <script type="text/javascript" src="files/js/script.js"></script>
 <script type="text/javascript" src="files/js/jquery-sequencer.min.js"></script>
-<script type="text/javascript" src="files/js/jquery.hoverplay.min.js"></script>
+<!-- <script type="text/javascript" src="files/js/jquery.hoverplay.min.js"></script> -->
 
 
 <!-- SCRIPTS -->
@@ -438,7 +437,6 @@
                 }else if(distanceBetween <300){
                     $('#secondTitle').html('<h2 style="text-align:left;padding-left:16vw;"><b>From phone,<br>&nbsp;&nbsp;&nbsp;&nbsp;to AI sidekick.</b></h2>');
                 }
-        
             }
         }else{
             $('.fullVideoWrapper').css({'opacity' : 1,'position': 'sticky', 'top': '0px'});
