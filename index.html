@@ -123,15 +123,7 @@
     </div>
     <div id = "trigger"></div>
     <section id="page-body">
-<!--     <section id="hero" class="hero-full parallax-section text-light" data-parallax-image="files/uploads/glam.jpg"data-parallax-image="files/uploads/glam.jpg">
-        <div class="page-title">
-            <h1 style="mix-blend-mode: color-burn; ;"><strong>Emoto</strong></h1>
-                    <div class="wrapper-small align-center">
-            <h5>From phone to AI sidekick</h5>
-        </div>
-        </div>
-        <a id="scroll-down" href="#"></a>
-    </section>   -->     
+<!--     <section id="hero" class="hero-full parallax-section text-light" data-parallax-image="files/uploads/glam.jpg"data-parallax-image="files/uploads/glam.jpg"> 
 	<!-- PAGEBODY -->
 <!-- 	<section id="page-body"> -->
         <div class="fullVideoWrapper" id="imgSequenceEnd" style="visibility:hidden;">
@@ -427,29 +419,33 @@
         var totalHeight = jQuery( document ).height();
         var distanceBetween = distanceToVideo - scrollPos;
         
-
-        if(distanceBetween < 50){
-            $('.burnOverlay').css('visibility','visible');
-            // $('#images').css({'opacity' : distanceBetween/50});
-            $('.fullVideoWrapper').css('visibility','visible');
-            $('.fullVideoWrapper').css({'opacity' : (50-distanceBetween)/50});
-            if(distanceBetween < 1){
-                $('.fullVideoWrapper').css({'opacity' : 1,'position': 'sticky', 'top': '0px'});
-                $('#images').css('visibility','hidden');
-                $('#secondTitle').css({'opacity' : 0});
+        if(scrollPos < distanceToVideo){
+            if(distanceBetween < 50){
+                $('.burnOverlay').css('visibility','visible');
+                // $('#images').css({'opacity' : distanceBetween/50});
+                $('.fullVideoWrapper').css('visibility','visible');
+                $('.fullVideoWrapper').css({'opacity' : (50-distanceBetween)/50});
+            }else{
+                $('#images').css('visibility','visible');
+                $('.fullVideoWrapper').css('visibility','hidden');
+                if(scrollPos<400){
+                    $('.image-container').css({'opacity' : 1});
+                    $('#landingTitle').css({'opacity' : 1-(scrollPos/300)});
+                    $('#secondTitle').css({'opacity' : (scrollPos-300)/100});
+                    // $('.burnOverlay').css({'opacity' : 1-(scrollPos/300)});
+                // }else if(scrollPos < 420){
+                }else if(distanceBetween <300){
+                    $('#secondTitle').html('<h2 style="text-align:left;padding-left:16vw;"><b>From phone,<br>&nbsp;&nbsp;&nbsp;&nbsp;to AI sidekick.</b></h2>');
+                }
+        
             }
         }else{
-            $('#images').css('visibility','visible');
-            $('.fullVideoWrapper').css('visibility','hidden');
-            if(scrollPos<400){
-                $('#landingTitle').css({'opacity' : 1-(scrollPos/300)});
-                $('#secondTitle').css({'opacity' : (scrollPos-300)/100});
-                // $('.burnOverlay').css({'opacity' : 1-(scrollPos/300)});
-            // }else if(scrollPos < 420){
-            }else if(distanceBetween <300){
-                $('#secondTitle').html('<h2 style="text-align:left;padding-left:16vw;"><b>From phone,<br>&nbsp;&nbsp;&nbsp;&nbsp;to AI sidekick.</b></h2>');
-            }
+            $('.fullVideoWrapper').css({'opacity' : 1,'position': 'sticky', 'top': '0px'});
+            $('#images').css('visibility','hidden');
+            $('.image-container').css({'opacity' : 0});
+            $('#secondTitle').css({'opacity' : 0});
         }
+        
     });
 
 
