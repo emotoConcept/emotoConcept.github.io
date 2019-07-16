@@ -942,7 +942,6 @@ footer #backtotop:before {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;*/
-
   position: relative;
   height:900px;
 }
@@ -1796,7 +1795,7 @@ a.sr-button4:hover { background: #ffffff; color: #000000;}
 /*	inline video and big fullscreenvideo
 ------------------------------------------------*/	
 .bg{
-	height:90%;
+	min-height:90%;
 	width:auto;
 	align-content: center;
 	left:50%;
