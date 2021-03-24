@@ -947,6 +947,7 @@ footer #backtotop:before {
 }
 .sequencer {
     min-height: 100%;
+	min-width:100%;
     width: auto;
     position: fixed;
     top: 50%;
